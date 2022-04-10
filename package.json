@@ -34,7 +34,8 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "preset": "ts-jest",
+    "coverageDirectory": "coverage",
+
     "moduleNameMapper": {
       "~/(.*)": "<rootDir>/src/$1"
     },
