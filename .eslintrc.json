@@ -6,28 +6,45 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "airbnb-base",
-    // "airbnb-typescript/base", // https://microeducate.tech/typescript-eslint-missing-file-extension-ts-import-extensions/
-    "universe/node",
-    // "plugin:import/recommended",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended"
-  ],
   "plugins": ["import", "@typescript-eslint"],
+  "extends": [
+    // airbnb與universe對typescript的支援都很齊全，且設定方式略有差異，故二擇一即可
+    // https://github.com/iamturns/eslint-config-airbnb-typescript
+    // https://github.com/expo/expo/tree/main/packages/eslint-config-universe
+    "airbnb-base",
+
+    "universe/node",
+    "universe/shared/typescript-analysis"
+    // universe對typescript已是用overrides設定, 故不用放到overrides的extends
+    // universe/node已有設定 "plugin:import/typescript",
+    // universe/node已有設定prettier並將rule全改為warn級別
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
+      "files": ["*.ts", "*.tsx", "*.d.ts"],
       "extends": [
-        "airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
       ],
       "parserOptions": {
-        "project": "./tsconfig.json",
-        "tsconfigRootDir": ".",
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "project": "./tsconfig.eslint.json"
+      },
+      "rules": {
+        // https://stackoverflow.com/questions/59265981/typescript-eslint-missing-file-extension-ts-import-extensions
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+          }
+        ]
       }
     }
   ],
@@ -37,8 +54,8 @@
     },
     "import/resolver": {
       "typescript": {
-        "alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-        // Choose from one of the "project" configs below or omit to use <root>/tsconfig.json by default
+        "alwaysTryTypes": true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+        "project": "./"
       }
     }
   },
