@@ -27,13 +27,20 @@
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   },
+  "dependencies": {
+    "tsconfig-paths": "^3.14.1"
+  },
   "jest": {
-    "preset": "ts-jest",
     "testEnvironment": "node",
+    "preset": "ts-jest",
     "coverageDirectory": "coverage",
     "moduleNameMapper": {
       "~/(.*)": "<rootDir>/src/$1"
     },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest",
+      "^.+\\.(js)$": "babel-jest"
+    }, 
     "globals": {
       "ts-jest": {
         "tsconfig": "tsconfig.test.json"
