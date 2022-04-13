@@ -1,6 +1,6 @@
 {
   "name": "test_maxwin_0",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "author": "Ren Zheng",
@@ -12,7 +12,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -58,5 +59,12 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Renhz/test_maxwin_0.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
