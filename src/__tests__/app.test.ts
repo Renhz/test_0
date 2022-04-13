@@ -1,7 +1,16 @@
 import greet from '../app';
 
-describe('test test', () => {
+describe('A member visiting..', () => {
+  interface UserInfo {
+    userName: string;
+    [key: string]: string;
+  }
+
+  const ren: UserInfo = {
+    userName: 'Ren',
+  };
+
   test('greet Ren', () => {
-    expect(greet('Ren')).toBe('Hello Ren');
+    expect(greet(ren.userName)).toBe(`Hello, ${ren.userName}`);
   });
 });
