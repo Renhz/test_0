@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Renhz/test_0/compare/1.0.0...1.0.1) (2022-04-14)
+
+
+### Bug Fixes
+
+* 將專案改為public並開啟npmPublish ([afb1c32](https://github.com/Renhz/test_0/commit/afb1c325be5e5cacee11b5e596e116fbe1df73ce))
+
 # 1.0.0 (2022-04-14)
 
 
