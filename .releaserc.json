@@ -1,4 +1,7 @@
 {
+  "branches": [
+    "main"
+  ],
   "plugins": [
     "@semantic-release/changelog",
     "@semantic-release/release-notes-generator",
@@ -7,9 +10,18 @@
       {
         "preset": "angular",
         "releaseRules": [
-          { "type": "refactor", "release": "patch" },
-          { "type": "style", "release": "patch" },
-          { "type": "test", "release": "patch" }
+          {
+            "type": "refactor",
+            "release": "patch"
+          },
+          {
+            "type": "style",
+            "release": "patch"
+          },
+          {
+            "type": "test",
+            "release": "patch"
+          }
         ]
       }
     ],
