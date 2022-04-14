@@ -65,6 +65,6 @@
     "url": "https://github.com/Renhz/test_0.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
