@@ -1,3 +1,5 @@
+## [1.0.4](https://github.com/Renhz/test_0/compare/1.0.3...1.0.4) (2022-04-15)
+
 ## [1.0.3](https://github.com/Renhz/test_0/compare/1.0.2...1.0.3) (2022-04-15)
 
 
