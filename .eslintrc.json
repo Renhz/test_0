@@ -59,6 +59,7 @@
       }
     }
   },
+  "ignorePatterns": ["dist/**/*.js"],
   "rules": {
     "import/no-unresolved": "error"
   }
