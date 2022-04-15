@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/Renhz/test_0/compare/1.0.1...1.0.2) (2022-04-15)
+
+
+### Bug Fixes
+
+* test husky ([a94e773](https://github.com/Renhz/test_0/commit/a94e7730c67f7c2f040ef5bd507489179406bda7))
+* 關閉npmPublish [skip ci] ([a095ac3](https://github.com/Renhz/test_0/commit/a095ac3587ade49514e6473736d9f583ed67ea8b))
+
 ## [1.0.1](https://github.com/Renhz/test_0/compare/1.0.0...1.0.1) (2022-04-14)
 
 
