@@ -8,7 +8,7 @@
       greetwords = `Hello, ${myName}`;
       break;
     default:
-      greetwords = 'Hello, dear';
+      greetwords = 'Helllo, dear';
   }
   return greetwords;
 };
