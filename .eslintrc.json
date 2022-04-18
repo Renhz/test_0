@@ -12,17 +12,19 @@
     // https://github.com/iamturns/eslint-config-airbnb-typescript
     // https://github.com/expo/expo/tree/main/packages/eslint-config-universe
     "airbnb-base",
-
     "universe/node",
+    // universe額外支援typescript設定, overrides設定詳見它的github
     "universe/shared/typescript-analysis"
-    // universe對typescript已是用overrides設定, 故不用放到overrides的extends
-    // universe/node已有設定 "plugin:import/typescript",
-    // universe/node已有設定prettier並將rule全改為warn級別
+    // 其他:
+    // universe/node已有設定plugin:import/typescript
+    // universe/node已有設定prettier
+
   ],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
+  // universe已有設定parserOptions及typescript-eslint
+  // "parserOptions": {
+  //   "ecmaVersion": "latest",
+  //   "sourceType": "module"
+  // },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.d.ts"],
@@ -49,9 +51,13 @@
     }
   ],
   "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
+    // universe已有設定import/parsers
+    // "import/parsers": {
+    //   "@typescript-eslint/parser": [".ts", ".tsx"]
+    // },
+
+    // https://github.com/import-js/eslint-plugin-import#typescript
+    // https://github.com/alexgorbatchev/eslint-import-resolver-typescript
     "import/resolver": {
       "typescript": {
         "alwaysTryTypes": true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
