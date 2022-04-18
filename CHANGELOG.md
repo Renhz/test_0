@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/Renhz/test_0/compare/1.0.4...1.0.5) (2022-04-18)
+
+
+### Bug Fixes
+
+* 調整不必要的jest及eslint設定 ([9698774](https://github.com/Renhz/test_0/commit/9698774d452d10c605c62790985b3b8360a515ab))
+
 ## [1.0.4](https://github.com/Renhz/test_0/compare/1.0.3...1.0.4) (2022-04-15)
 
 ## [1.0.3](https://github.com/Renhz/test_0/compare/1.0.2...1.0.3) (2022-04-15)
