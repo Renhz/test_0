@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Renhz/test_0/compare/1.0.5...1.1.0) (2022-04-20)
+
+
+### Features
+
+* 設定簡單的serve以便從瀏覽器檢視檔案 ([45ba28b](https://github.com/Renhz/test_0/commit/45ba28be16ea5b5a4460bdb838fd1b5a46755e0b))
+
 ## [1.0.5](https://github.com/Renhz/test_0/compare/1.0.4...1.0.5) (2022-04-18)
 
 
