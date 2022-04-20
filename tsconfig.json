@@ -3,7 +3,7 @@
     "target": "es2016" ,
     "experimentalDecorators": true ,
 
-    "module": "commonJS",
+    "module": "es6",
     "moduleResolution": "node",
     "baseUrl": "src" ,
     "paths": {
